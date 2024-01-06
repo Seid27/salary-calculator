@@ -40,11 +40,13 @@ function onSubmit(event) {
         <td>$${emp.annualSalary}</td>
         <td><button>Delete</button></td>
     </tr>`
-
     
     if (employees.length != 0) {
         const tFoot = document.getElementById('tFoot');
         tFoot.innerHTML = `<tr><th>Total Monthly Cost : </th><td>$${parseInt(totalMonthlyCost += emp.annualSalary/12)}</td></tr>`
+        tFoot.style.backgroundColor = 
+        `${totalMonthlyCost > 20000? 'red' : 'white'} 
+        `
     }
 
     //todo: add the total monthly cost
