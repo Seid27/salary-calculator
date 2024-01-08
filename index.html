@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
     <body>
-        <h1>Salary Calculator</h1>
-        <p>Add Employee</p>
-        <form id="emp-form">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="ID">
-            <input type="text" placeholder="Title">
-            <input type="text" placeholder="Annual Salary">
-            <button type="submit">Submit</button>
-        </form>
+            <h1>Salary Calculator</h1>
+            <div>
+                <h3>Add Employee</h3>
+                <form id="emp-form">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="ID">
+                    <input type="text" placeholder="Title">
+                    <input type="text" placeholder="Annual Salary">
+                    <button type="submit">Submit</button>
+                </form>
 
-        <table>
-            <thead>
-                <tr>
-                    <td>Employees</td>
-                </tr>
-                <tr>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                    <td>ID</td>
-                    <td>Title</td>
-                    <td>Annual Salary</td>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody id="tBody">
-            </tbody>
-            <tfoot id="tFoot">
-            </tfoot>
-        </table>
+                <h3>Employees</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>ID</td>
+                            <td>Title</td>
+                            <td>Annual Salary</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+                    </tbody>
+                    <!-- <tfoot id="tFoot">
+                    </tfoot> -->
+                </table>
+                <h3 id="tot-monthly">Total Monthly: <span>$0.00</span></h3>
+            </div>
     </body>
 </html>
